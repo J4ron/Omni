@@ -5,8 +5,7 @@
 <h1 align="center">Convexio</h1>
 
 <p align="center">
-  Modern, scalable and efficient solution for fast local file conversion via CLI.
-  <br />
+  Modern, scalable, and efficient solution for fast local file conversion via CLI.<br />
   <a href="https://convexio.sh"><strong>→ Website</strong></a>
   ·
   <a href="https://github.com/youruser/yourrepo/issues">Report Bug</a>
@@ -18,14 +17,14 @@
 
 ## 🚀 Features
 
-* ⚡ Schnelle & effiziente Verarbeitung von Dateien lokal via CLI
-* 🧠 Clean Architecture mit Fokus auf Testbarkeit
-* 🔌 Plug-in-System für einfache Erweiterbarkeit
-* 🧪 100% getestet mit JUnit
+* ⚡ Fast & efficient local file processing via CLI
+* 🧠 Clean architecture with a focus on testability
+* 🔌 Plugin system for easy extensibility
+* 🧪 100% tested with JUnit
 
 ---
 
-## 🔠 Installation
+## 💠 Installation
 
 ```bash
 git clone https://github.com/youruser/yourrepo.git
@@ -35,17 +34,17 @@ cd yourrepo
 
 ---
 
-## 🧪 Tests ausführen
+## 🧪 Running Tests
 
 ```bash
 ./gradlew test
 ```
 
-Oder in IntelliJ / WebStorm über das Test-Menü.
+Or run tests via the test menu in IntelliJ / WebStorm.
 
 ---
 
-## 🤰 Beispielverwendung (Java)
+## 🤩 Example Usage (Java)
 
 ```java
 FormatConverter<String, String> converter = new MyConverter();
@@ -54,35 +53,39 @@ String result = converter.convertTo("input");
 
 ---
 
-## 🧰 Beispielverwendung (CLI)
+## 🧰 Example Usage (CLI)
+
+<div align="center">
+  <img src="https://convexio.sh/assets/terminal-ui.svg" alt="Terminal UI" width="600"/>
+</div>
 
 ```bash
 convexio -i ./input/file.docx -o ./output/file.txt -p pretty
 ```
 
-**Parameter:**
+**Parameters:**
 
-* `-i` oder `--input` – Pfad zur Eingabedatei
-* `-o` oder `--output` – Pfad zur Ausgabedatei
-* `-p` oder `--profile` – Optionales Konvertierungsprofil (`pretty`, `raw`, ...)
+* `-i` or `--input` – Path to the input file
+* `-o` or `--output` – Path to the output file
+* `-p` or `--profile` – Optional conversion profile (`pretty`, `raw`, ...)
 
-> Flags können je nach Implementierung angepasst werden.
+> Flags may vary depending on implementation.
 
 ---
 
-## 🌐 Projekt-Website
+## 🌐 Project Website
 
 [https://convexio.sh](https://convexio.sh)
 
 ---
 
-## 📄 Lizenz
+## 📄 License
 
-Dieses Projekt steht unter der [MIT Lizenz](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👤 Autor
+## 👤 Author
 
 **dev.jaron** – [GitHub](https://github.com/devjaron) • [Website](https://convexio.sh)
 
