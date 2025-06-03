@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://convexio.sh/logo.png" alt="Project Logo" width="200"/>
+  <img src="[https://convexio.sh/logo.png](https://media.discordapp.net/attachments/807161892317036604/1379457173347897464/nobglogo.png?ex=68404f1b&is=683efd9b&hm=ed621b12cc01ec0e0f140b62c5b041890051a817951c7fc72ef0d970c3df9e08&=&format=webp&quality=lossless)" alt="Project Logo" width="200"/>
 </p>
 
 <h1 align="center">Convexio</h1>
