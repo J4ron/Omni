@@ -55,7 +55,8 @@ String result = converter.convertTo("input");
 
 ## 🧰 Example Usage (CLI)
 
-![Terminal UI](src/main/resources/cli.png)
+![Terminal UI](src/main/resources/cli.png){width=600px}
+
 
 
 ```bash
