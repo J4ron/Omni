@@ -5,7 +5,7 @@
 <h1 align="center">Convexio</h1>
 
 <p align="center">
-  Modern, scalable and efficient solution for [Kurze Projektbeschreibung hier].
+  Modern, scalable and efficient solution for fast local file conversion via CLI.
   <br />
   <a href="https://convexio.sh"><strong>→ Website</strong></a>
   ·
@@ -18,14 +18,14 @@
 
 ## 🚀 Features
 
-* ⚡ Schnelle & effiziente Verarbeitung von ...
+* ⚡ Schnelle & effiziente Verarbeitung von Dateien lokal via CLI
 * 🧠 Clean Architecture mit Fokus auf Testbarkeit
 * 🔌 Plug-in-System für einfache Erweiterbarkeit
 * 🧪 100% getestet mit JUnit
 
 ---
 
-## 💠 Installation
+## 🔠 Installation
 
 ```bash
 git clone https://github.com/youruser/yourrepo.git
@@ -45,7 +45,7 @@ Oder in IntelliJ / WebStorm über das Test-Menü.
 
 ---
 
-## 🤩 Beispielverwendung
+## 🤰 Beispielverwendung (Java)
 
 ```java
 FormatConverter<String, String> converter = new MyConverter();
@@ -54,9 +54,25 @@ String result = converter.convertTo("input");
 
 ---
 
+## 🧰 Beispielverwendung (CLI)
+
+```bash
+convexio -i ./input/file.docx -o ./output/file.txt -p pretty
+```
+
+**Parameter:**
+
+* `-i` oder `--input` – Pfad zur Eingabedatei
+* `-o` oder `--output` – Pfad zur Ausgabedatei
+* `-p` oder `--profile` – Optionales Konvertierungsprofil (`pretty`, `raw`, ...)
+
+> Flags können je nach Implementierung angepasst werden.
+
+---
+
 ## 🌐 Projekt-Website
 
-[https://yourproject.com](https://yourproject.com)
+[https://convexio.sh](https://convexio.sh)
 
 ---
 
@@ -68,7 +84,7 @@ Dieses Projekt steht unter der [MIT Lizenz](LICENSE).
 
 ## 👤 Autor
 
-**dev.jaron** – [GitHub](https://github.com/devjaron) • [Website](https://yourproject.com)
+**dev.jaron** – [GitHub](https://github.com/devjaron) • [Website](https://convexio.sh)
 
 ---
 
