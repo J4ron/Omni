@@ -2,7 +2,7 @@
   <img src="https://convexio.sh/logo.png" alt="Project Logo" width="200"/>
 </p>
 
-<h1 align="center">Project Name</h1>
+<h1 align="center">Convexio</h1>
 
 <p align="center">
   Modern, scalable and efficient solution for [Kurze Projektbeschreibung hier].
