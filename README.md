@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://yourdomain.com/logo.png" alt="Project Logo" width="200"/>
+  <img src="https://convexio.sh/logo.png" alt="Project Logo" width="200"/>
 </p>
 
 <h1 align="center">Project Name</h1>
@@ -7,7 +7,7 @@
 <p align="center">
   Modern, scalable and efficient solution for [Kurze Projektbeschreibung hier].
   <br />
-  <a href="https://yourproject.com"><strong>→ Website</strong></a>
+  <a href="https://convexio.sh"><strong>→ Website</strong></a>
   ·
   <a href="https://github.com/youruser/yourrepo/issues">Report Bug</a>
   ·
