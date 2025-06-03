@@ -1,0 +1,24 @@
+commands:
+  convert:
+    description: "Convert a file"
+    options:
+      - name: "-r"
+        description: "Rename output file"
+        required: false
+        argument: true
+      - name: "-f"
+        description: "Final format"
+        required: true
+        argument: true
+      - name: "-p"
+        description: "Output directory path"
+        required: false
+        argument: true
+      - name: "--verbose"
+        description: "Enable verbose output"
+        required: false
+        argument: false
+    arguments:
+      - name: "inputFile"
+        description: "Input file"
+        required: true
