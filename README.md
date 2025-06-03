@@ -55,9 +55,8 @@ String result = converter.convertTo("input");
 
 ## 🧰 Example Usage (CLI)
 
-<div align="center">
-  <img src="https://convexio.sh/assets/terminal-ui.svg" alt="Terminal UI" width="600"/>
-</div>
+![Terminal UI](src/main/resources/cli.png)
+
 
 ```bash
 convexio -i ./input/file.docx -o ./output/file.txt -p pretty
