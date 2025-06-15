@@ -66,7 +66,7 @@ convexio -i ./input/file.docx -o ./output/file.txt -p pretty
 
 * `-i` or `--input` – Path to the input file
 * `-o` or `--output` – Path to the output file
-* `-p` or `--profile` – Optional conversion profile (`pretty`, `raw`, ...)
+* `-r` or `--rename` – Renames Original Path
 
 > Flags may vary depending on implementation.
 
