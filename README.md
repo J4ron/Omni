@@ -51,9 +51,8 @@ Convexio uses a plugin-like strategy system to select and run the right converte
 * ⚡ Fast & efficient local file processing via CLI
 * 🧠 Clean architecture with a focus on testability
 * 🔌 Plugin system for easy extensibility
-* 🔐 Optional license key system with secure activation flow
-* 🧪 100% tested with JUnit
 * 🧱 Hexagonal architecture (Ports & Adapters)
+* 🧪 100% tested with JUnit
 
 ---
 
@@ -75,17 +74,21 @@ java -jar convexio.jar convert -i ./input.docx -o ./output.pdf -r docxReader -t 
 
 ## ⚙️ Activation System
 
-Convexio supports a one-time license system with local config storage. Activation is CLI-based:
+Convexio includes an optional license activation system for Pro features. Activation is simple and local:
 
 ```bash
-convexio upgrade -k "YOUR_LICENSE_KEY"
-convexio upgrade -d    # Deactivates current device
+convexio activate --key "YOUR_LICENSE_KEY"
+convexio deactivate
+convexio set-key "NEW_LICENSE_KEY"
+convexio status
 ```
 
 * 🔑 License keys are one-time purchasable
-* 🖥️ Bound to your device ID
-* 📁 Stored securely in local config file
-* 📬 Delivered via email after purchase
+* 🖥️ Bound to your device fingerprint
+* 📁 Stored in `~/.convexio/config.json`
+* 📬 Keys are delivered by email
+
+No cloud validation. Fully offline-capable.
 
 ---
 
