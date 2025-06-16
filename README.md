@@ -79,7 +79,6 @@ Convexio includes an optional license activation system for Pro features. Activa
 ```bash
 convexio activate --key "YOUR_LICENSE_KEY"
 convexio deactivate
-convexio set-key "NEW_LICENSE_KEY"
 convexio status
 ```
 
