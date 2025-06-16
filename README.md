@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[src/main/resources/nobglogoasci.png] alt="Project Logo" width="200"/>
+ <img src="src/main/resources/nobglogoasci.png">
 </p>
 
 <h1 align="center">Convexio</h1>
