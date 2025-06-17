@@ -1,7 +1,7 @@
 package sh.convexio.domain.model;
 
 public class CancellationToken {
-    private volatile boolean isCancelled;
+    private boolean isCancelled;
 
     public CancellationToken() {
         this(false);
