@@ -1,4 +1,4 @@
-package sh.convexio.strategies;
+package sh.omni.strategies;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
-import sh.convexio.domain.model.FileContent;
-import sh.convexio.domain.ports.IPdfConstants;
+import sh.omni.domain.model.FileContent;
+import sh.omni.domain.ports.IPdfConstants;
 
 /**
  * A strategy for converting text (.txt) files to PDF documents.

@@ -1,4 +1,4 @@
-package sh.convexio.strategies;
+package sh.omni.strategies;
 
 import java.util.ArrayList;
 import java.util.List;

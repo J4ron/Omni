@@ -1,4 +1,4 @@
-package sh.convexio.domain.model;
+package sh.omni.domain.model;
 
 /**
  * Represents the content of a file, including its name, raw content as a byte array,

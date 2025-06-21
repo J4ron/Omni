@@ -1,4 +1,4 @@
-package sh.convexio;
+package sh.omni;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,9 +8,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConvexioApp {
+public class OmniApp {
     public static void main(String[] args) throws IOException {
-        InputStream inputStream = ConvexioApp.class.getClassLoader().getResourceAsStream("logo.txt");
+        InputStream inputStream = OmniApp.class.getClassLoader().getResourceAsStream("logo.txt");
         if (inputStream == null) {
             throw new IOException("logo.txt not found in resources");
         }

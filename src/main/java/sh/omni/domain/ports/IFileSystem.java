@@ -1,5 +1,5 @@
-package sh.convexio.domain.ports;
-import sh.convexio.domain.model.FileContent;
+package sh.omni.domain.ports;
+import sh.omni.domain.model.FileContent;
 
 /**
  * Provides an abstraction for file system operations, including reading from and writing to files.

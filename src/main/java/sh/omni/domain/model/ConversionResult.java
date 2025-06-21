@@ -1,4 +1,4 @@
-package sh.convexio.domain.model;
+package sh.omni.domain.model;
 
 /**
  * Represents the result of a file or content conversion process.

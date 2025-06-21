@@ -1,8 +1,8 @@
-package sh.convexio.adapters.out;
+package sh.omni.adapters.out;
 
 import org.apache.commons.io.FileUtils;
-import sh.convexio.domain.model.FileContent;
-import sh.convexio.domain.ports.IFileSystem;
+import sh.omni.domain.model.FileContent;
+import sh.omni.domain.ports.IFileSystem;
 
 import java.io.File;
 import java.io.IOException;

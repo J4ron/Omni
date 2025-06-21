@@ -1,9 +1,9 @@
-package sh.convexio.domain.services;
+package sh.omni.domain.services;
 
-import sh.convexio.domain.model.ConversionResult;
-import sh.convexio.domain.model.FileContent;
-import sh.convexio.strategies.IConversionStrategy;
-import sh.convexio.strategies.StrategyRegistry;
+import sh.omni.domain.model.ConversionResult;
+import sh.omni.domain.model.FileContent;
+import sh.omni.strategies.IConversionStrategy;
+import sh.omni.strategies.StrategyRegistry;
 
 /**
  * Provides conversion services for transforming file content from one format to another

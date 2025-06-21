@@ -1,4 +1,4 @@
-package sh.convexio.domain.model;
+package sh.omni.domain.model;
 
 public class CancellationToken {
     private boolean isCancelled;

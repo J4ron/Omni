@@ -1,4 +1,4 @@
-package sh.convexio.domain.model;
+package sh.omni.domain.model;
 
 /**
  * Represents a request for content conversion, encapsulating the necessary
@@ -19,5 +19,9 @@ package sh.convexio.domain.model;
 public record ConversionRequest(
         String inputPath,
         String outputPath,
-        String targetFormat
+        String targetFormat,
+        boolean batch,
+        Integer quality,
+        String formDataPath,
+        boolean verbose
 ) {}

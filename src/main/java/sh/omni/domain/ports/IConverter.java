@@ -1,7 +1,7 @@
-package sh.convexio.domain.ports;
+package sh.omni.domain.ports;
 
-import sh.convexio.domain.model.ConversionRequest;
-import sh.convexio.domain.model.ConversionResult;
+import sh.omni.domain.model.ConversionRequest;
+import sh.omni.domain.model.ConversionResult;
 
 /**
  * Defines an abstraction for handling the conversion of files or content from one format to another.

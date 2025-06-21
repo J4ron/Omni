@@ -1,2 +1,2 @@
-rootProject.name = "Convexio"
+rootProject.name = "omni"
 

@@ -1,10 +1,10 @@
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sh.convexio.domain.model.ConversionResult;
-import sh.convexio.domain.model.FileContent;
-import sh.convexio.domain.services.ConverterService;
-import sh.convexio.strategies.StrategyRegistry;
-import sh.convexio.strategies.TxtToPdfStrategy;
+import sh.omni.domain.model.ConversionResult;
+import sh.omni.domain.model.FileContent;
+import sh.omni.domain.services.ConverterService;
+import sh.omni.strategies.StrategyRegistry;
+import sh.omni.strategies.TxtToPdfStrategy;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;

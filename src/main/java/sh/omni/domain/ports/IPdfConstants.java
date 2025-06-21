@@ -1,4 +1,4 @@
-package sh.convexio.domain.ports;
+package sh.omni.domain.ports;
 
 import org.apache.pdfbox.pdmodel.font.Standard14Fonts;
 

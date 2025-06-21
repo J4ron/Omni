@@ -1,5 +1,5 @@
-package sh.convexio.strategies;
-import sh.convexio.domain.model.FileContent;
+package sh.omni.strategies;
+import sh.omni.domain.model.FileContent;
 
 /**
  * Represents a strategy interface for file format conversion. Implementations of this interface

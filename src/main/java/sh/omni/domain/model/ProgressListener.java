@@ -1,4 +1,4 @@
-package sh.convexio.domain.model;
+package sh.omni.domain.model;
 
 /**
  * Functional interface representing a listener to monitor progress updates.

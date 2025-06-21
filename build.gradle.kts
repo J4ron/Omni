@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "sh.convexio"
+group = "sh.omni"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -16,10 +16,12 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
+
+
 tasks {
     jar {
         manifest {
-            attributes["Main-Class"] = "sh.convexio.ConvexioSh"
+            attributes["Main-Class"] = "sh.omni.OmniSh"
         }
     }
 }
