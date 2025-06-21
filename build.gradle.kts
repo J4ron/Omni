@@ -21,7 +21,7 @@ dependencies {
 tasks {
     jar {
         manifest {
-            attributes["Main-Class"] = "sh.omni.OmniSh"
+            attributes["Main-Class"] = "sh.omni.OmniApp"
         }
     }
 }

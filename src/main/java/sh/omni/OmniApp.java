@@ -10,7 +10,7 @@ import java.util.List;
 
 public class OmniApp {
     public static void main(String[] args) throws IOException {
-        InputStream inputStream = OmniApp.class.getClassLoader().getResourceAsStream("src/gitresources/logo.txt");
+        InputStream inputStream = OmniApp.class.getClassLoader().getResourceAsStream("logo.txt");
         if (inputStream == null) {
             throw new IOException("logo.txt not found in resources");
         }
@@ -45,19 +45,28 @@ public class OmniApp {
         final String RESET = "\033[0m";
 
         return List.of(
-                GREEN + "\t\t\tconvexio convert" + WHITE + " <inputFile>" + CYAN + " [options]" + RESET,
-                "\t\t\t---------------------------------------",
+                GREEN + "\t\t\tomni convert" + WHITE + " -i <inputFile> -o <outputFile> -t <targetFormat>" + CYAN + " [options]" + RESET,
+                GREEN + "\t\t\tomni convert" + WHITE + " -bc -in <inputFolder> -out <outputFolder> -t <targetFormat>" + CYAN + " [options]" + RESET,
+                "\t\t\t--------------------------------------------------------------------------------",
                 CYAN + "\t\t\tDescription:" + RESET,
-                GREY + "\t\t\tConvert a file" + RESET,
+                GREY + "\t\t\tConvert single files or entire folders into another format" + RESET,
                 "",
-                CYAN + "\t\t\tRequired:" + RESET,
-                PINK_PURPLE + "\t\t\t-f " + WHITE + "<format>" + GREY + "       Final format" + RESET,
-                WHITE + "\t\t\tinputFile" + GREY + "         Input file" + RESET,
+                CYAN + "\t\t\tRequired (Single File):" + RESET,
+                PINK_PURPLE + "\t\t\t-i " + WHITE + "<file>" + GREY + "           Input file" + RESET,
+                PINK_PURPLE + "\t\t\t-o " + WHITE + "<file>" + GREY + "           Output file" + RESET,
+                PINK_PURPLE + "\t\t\t-t " + WHITE + "<format>" + GREY + "         Target format (e.g. pdf, png, txt)" + RESET,
+                "",
+                CYAN + "\t\t\tRequired (Batch Mode):" + RESET,
+                PINK_PURPLE + "\t\t\t-bc" + GREY + "                    Enable batch mode" + RESET,
+                PINK_PURPLE + "\t\t\t-in " + WHITE + "<folder>" + GREY + "         Input folder" + RESET,
+                PINK_PURPLE + "\t\t\t-out " + WHITE + "<folder>" + GREY + "        Output folder" + RESET,
+                PINK_PURPLE + "\t\t\t-t " + WHITE + "<format>" + GREY + "         Target format for all files" + RESET,
                 "",
                 CYAN + "\t\t\tOptional:" + RESET,
-                PINK_PURPLE + "\t\t\t-r " + WHITE + "<name>" + GREY + "         Rename output file" + RESET,
-                PINK_PURPLE + "\t\t\t-p " + WHITE + "<path>" + GREY + "         Output directory path" + RESET,
-                PINK_PURPLE + "\t\t\t--verbose" + GREY + "         Enable verbose output" + RESET
+                PINK_PURPLE + "\t\t\t-q " + WHITE + "<1-100>" + GREY + "          Image quality (images or PDF)" + RESET,
+                PINK_PURPLE + "\t\t\t-f " + WHITE + "<json>" + GREY + "           Fill PDF form with JSON data" + RESET,
+                PINK_PURPLE + "\t\t\t--verbose" + GREY + "              Enable verbose output" + RESET
         );
+
     }
 }
