@@ -1,5 +1,5 @@
 <p align="center">
- <img src="src/main/resources/nobglogoasci.png" alt="Omni Logo">
+ <img src="src/gitresources/nobglogoasci.png" alt="Omni Logo">
 </p>
 
 <h1 align="center">Omni</h1>
@@ -42,7 +42,7 @@ Omni is built for:
 
 Omni uses a plugin-like strategy system to select and run the right converter for each file type. Its clean, hexagonal architecture ensures easy testing, maintenance, and extension.
 
-![Architecture Diagram](src/main/resources/Omni-architecture.png) <!-- Optional placeholder -->
+![Architecture Diagram](src/gitresources/Omni-architecture.png) <!-- Optional placeholder -->
 
 ---
 
@@ -112,7 +112,7 @@ String result = converter.convertTo("input");
 
 ## 🧰 Example Usage (CLI)
 
-<img src="src/main/resources/climockup.png" alt="CLI Usage Screenshot">
+<img src="src/gitresources/climockup.png" alt="CLI Usage Screenshot">
 
 ```bash
 omni -i ./input/file.docx -o ./output/file.txt -p pretty

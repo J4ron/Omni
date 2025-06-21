@@ -10,7 +10,7 @@ import java.util.List;
 
 public class OmniApp {
     public static void main(String[] args) throws IOException {
-        InputStream inputStream = OmniApp.class.getClassLoader().getResourceAsStream("logo.txt");
+        InputStream inputStream = OmniApp.class.getClassLoader().getResourceAsStream("src/gitresources/logo.txt");
         if (inputStream == null) {
             throw new IOException("logo.txt not found in resources");
         }

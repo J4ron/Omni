@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "buildNumber": "2025.1.1",
+  "releaseDate": "2025-06-21",
+  "copyright": "© 2025 Convexio by dev.jaron. Alle Rechte vorbehalten.",
+  "repository": "https://github.com/devjaron/convexio",
+  "changelog": {
+    "current": {
+      "version": "1.0.0",
+      "date": "2025-06-21",
+      "changes": [
+        "Initiale Version mit Grundfunktionen",
+        "PDF Konvertierung implementiert",
+        "CLI Interface eingeführt"
+      ]
+    },
+    "history": [
+      {
+        "version": "0.9.0-beta",
+        "date": "2025-05-15",
+        "changes": [
+          "Beta-Release für Tester",
+          "Grundlegende Konvertierungsfunktionen"
+        ]
+      }
+    ]
+  }
+}
