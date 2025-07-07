@@ -20,5 +20,6 @@ package sh.omni.domain.model;
 public record FileContent(
         String filename,
         byte[] content,
-        String format
+        String format,
+        boolean verbose
 ) {}

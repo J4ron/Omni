@@ -2,8 +2,8 @@
 # Convexio - Implementierungsliste für Konvertierungsstrategien
 
 ## PDF-Verarbeitung
-- [ ] **PdfToWordStrategy.java**
-    - Implementierung der PDF → DOCX Konvertierung
+- [ ] **WordToPdfStrategy.java**
+    - Implementierung der Docx → PDF Konvertierung
     - Benötigte Bibliotheken: Apache POI, PDFBox
     - Hauptfunktionen: Textextraktion, Formatierung bewahren
 

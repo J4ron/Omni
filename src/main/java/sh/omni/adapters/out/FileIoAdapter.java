@@ -26,7 +26,7 @@ public class FileIoAdapter implements IFileSystem {
         try {
             byte[] content = Files.readAllBytes(Path.of(path));
             String format = getFileFormat(path);
-            return new FileContent(path, content, format);
+            return new FileContent(path, content, format, false);
         } catch (IOException e) {
             throw new RuntimeException("Error while reading file: " + path, e);
         }
