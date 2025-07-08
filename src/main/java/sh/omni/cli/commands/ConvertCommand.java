@@ -2,20 +2,25 @@ package sh.omni.cli.commands;
 
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
+import sh.omni.domain.model.ConversionRequest;
+import sh.omni.domain.ports.IConverter;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Command(name = "convert", description = "Convert files or folders to a different format.")
 public class ConvertCommand implements Runnable {
 
-    @Option(names = {"-i", "--input"}, description = "Input file", required = false)
+    @Option(names = {"-i", "--input"}, description = "Input file")
     private String inputFile;
 
-    @Option(names = {"-o", "--output"}, description = "Output file", required = false)
+    @Option(names = {"-o", "--output"}, description = "Output file")
     private String outputFile;
 
-    @Option(names = {"-in"}, description = "Input folder (batch mode)", required = false)
+    @Option(names = {"-in"}, description = "Input folder (batch mode)")
     private String inputFolder;
 
-    @Option(names = {"-out"}, description = "Output folder (batch mode)", required = false)
+    @Option(names = {"-out"}, description = "Output folder (batch mode)")
     private String outputFolder;
 
     @Option(names = {"-t", "--target"}, description = "Target format (e.g., pdf, png, txt)", required = true)
@@ -24,22 +29,28 @@ public class ConvertCommand implements Runnable {
     @Option(names = {"-bc", "--batch"}, description = "Enable batch mode")
     private boolean batch = false;
 
-    @Option(names = {"-q", "--quality"}, description = "Image quality (1-100)", required = false)
+    @Option(names = {"-q", "--quality"}, description = "Image quality (1-100)")
     private Integer quality;
 
-    @Option(names = {"-f", "--formdata"}, description = "Fill PDF form with JSON data", required = false)
+    @Option(names = {"--dpi"}, description = "Image DPI (dots per inch), e.g. 300")
+    private Integer dpi;
+
+    @Option(names = {"-f", "--formdata"}, description = "Fill PDF form with JSON data")
     private String formData;
 
     @Option(names = {"-v", "--verbose"}, description = "Enable verbose output")
     private boolean verbose = false;
 
-    private final sh.omni.domain.ports.IConverter converter;
+    @Option(names = {"--merge"}, description = "Merge all input files into one output")
+    private boolean merge = false;
+
+    private final IConverter converter;
 
     public ConvertCommand() {
         this.converter = null;
     }
 
-    public ConvertCommand(sh.omni.domain.ports.IConverter converter) {
+    public ConvertCommand(IConverter converter) {
         this.converter = converter;
     }
 
@@ -60,14 +71,16 @@ public class ConvertCommand implements Runnable {
             }
         }
 
-        sh.omni.domain.model.ConversionRequest request = new sh.omni.domain.model.ConversionRequest(
+        ConversionRequest request = new ConversionRequest(
                 batch ? inputFolder : inputFile,
                 batch ? outputFolder : outputFile,
                 targetFormat.toLowerCase(),
                 batch,
                 quality,
+                dpi,
                 formData,
-                verbose
+                verbose,
+                merge
         );
 
         try {
@@ -83,11 +96,11 @@ public class ConvertCommand implements Runnable {
     }
 
     private String generateOutputFileName(String inputPath, String targetFormat) {
-        java.nio.file.Path input = java.nio.file.Paths.get(inputPath);
+        Path input = Paths.get(inputPath);
         String fileName = input.getFileName().toString();
         int lastDot = fileName.lastIndexOf('.');
         String fileNameWithoutExt = (lastDot == -1) ? fileName : fileName.substring(0, lastDot);
-        java.nio.file.Path parent = input.getParent();
+        Path parent = input.getParent();
         String newFileName = fileNameWithoutExt + "." + targetFormat.toLowerCase();
         return (parent != null) ? parent.resolve(newFileName).toString() : newFileName;
     }

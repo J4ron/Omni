@@ -22,6 +22,8 @@ public record ConversionRequest(
         String targetFormat,
         boolean batch,
         Integer quality,
+        Integer dpi,
         String formDataPath,
-        boolean verbose
+        boolean verbose,
+        boolean merge
 ) {}
